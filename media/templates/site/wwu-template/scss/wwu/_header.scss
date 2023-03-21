@@ -1,0 +1,153 @@
+
+header {
+  .logo {  
+		img {
+			height: 161px;
+			margin-top: -20px;	
+			width:auto;
+		}
+    }
+    .navi {
+      @media (min-width: 768px) {
+      
+      }
+      
+    }
+}
+header{	
+	.top-container{
+		background:$secondaryColor;	
+		height:78px;
+		position:relative;
+	}
+	.navi {
+		padding-top: 25px;
+		text-align:right;
+		.moduletable{
+			display:inline-block;
+		}
+		ul.nav{
+			li{
+				position:relative;
+				a{
+					font-size:18px;
+					line-height: 20px;
+					padding-bottom: 5px;
+					color:$white;
+				}
+				&.active>a,&:hover>a{
+					border-bottom: 1px solid $hoverColor;	
+				}
+			}
+			/*MenuLevel1*/
+			>li{
+				padding: 10px 30px 19px 20px;				
+				>a{				
+					border-bottom: 1px solid transparent;					
+				}
+				>&.active>a,>&>a:hover{					
+					border-bottom: 1px solid $hoverColor;					
+				}
+			}
+			/*SubMenu*/
+			ul{
+				display:none;
+				position:absolute;
+				top:100%;
+				left:-250px;
+				min-width:600px;
+				background-color: $transpGrey;
+				text-align: center;
+				border-radius: 0 0 10px 10px;
+				transition: all 0.3s ease-in-out;
+				li{					
+					display: inline-block;
+					padding: 10px 10px 10px 10px;
+					flex: fit-content;
+					a{
+						color:$black;
+					}
+				
+				}
+			}
+			li.current>ul{
+				display:flex;
+			}			
+		}		      
+    }
+	
+}
+/*mobile*/
+.mobile_container{
+	display:none;
+}
+@media (max-width: 1200px) {	
+	header{
+		.navi {
+			display:none;
+		}
+		.mobile_container{
+			display:block;
+		}
+		.mobile_container{
+			
+		}
+		.top-container{
+			height:60px;
+		}
+		.logo img{
+			height:100px;
+			margin-top:-10px;
+			position: relative;
+			z-index: 200;
+		}
+		.mobile_nav {
+			position: absolute;
+			right: 10px;
+			top: 15px;
+			cursor: pointer;
+		}
+		.mobile_nav i {
+			color: $white;
+			font-size: 30px;
+		}
+		.mobile_nav:hover i {
+			color:$hoverColor;
+		}
+		.mobile_menu{
+			padding:20px;
+			background:$black;
+			position: absolute;
+			left: 0;
+			top: 100%;
+			width: 100%;
+			display:none;
+			transition: all 0.3s ease-in-out;
+			z-index: 100;
+		}
+		.mobile_menu ul{
+			list-style:none;
+			padding:10px 0 10px 20px;
+			display:block;
+		}
+		.mobile_menu li{
+			display:block;
+		}
+		.mobile_menu li a{
+			display:block;
+			color:$white;
+			font-size:18px;
+		}
+		.mobile_menu li.active>a,.mobile_menu li a:hover{
+			color: $hoverColor;
+		}
+		.mobile_container.active>.mobile_menu{
+			display:block;
+		}
+		.slide-image img {
+			height: 250px;
+			width: auto;
+			max-width: none;
+		}
+	}
+} 

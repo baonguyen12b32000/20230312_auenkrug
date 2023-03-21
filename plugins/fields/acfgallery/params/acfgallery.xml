@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="fieldparams">
+		<fieldset name="fieldparams">
+			<field type="spacer" name="label"
+				label="NR_UPLOAD_SETTINGS"
+				class="acf"
+			/>
+			<field name="upload_folder_type" type="radio"
+				label="ACF_GALLERY_FOLDER_TYPE"
+				description="ACF_GALLERY_FOLDER_TYPE_DESC"
+		        class="btn-group btn-group-yesno"
+				default="auto">
+					<option value="auto">NR_AUTO</option>
+					<option value="custom">NR_CUSTOM</option>
+			</field>
+			<field name="upload_folder" type="text"
+				label="ACF_GALLERY_UPLOAD_FOLDER"
+				description="ACF_GALLERY_UPLOAD_FOLDER_DESC"
+				hint="media/acfgallery"
+				default="media/acfgallery"
+				showon="upload_folder_type:custom"
+			/>
+			<field name="limit_files" type="number"
+				label="ACF_GALLERY_LIMIT_FILES"
+				description="ACF_GALLERY_LIMIT_FILES_DESC"
+				class="input-small"
+				default="0"
+				hint="0"
+				min="0"
+			/>
+			<field name="max_file_size" type="nrnumber"
+				label="ACF_GALLERY_MAX_FILE_SIZE"
+				description="ACF_GALLERY_MAX_FILE_SIZE_DESC"
+				class="input-small"
+				addon="MB"
+				min="0"
+				default="0"
+				hint="0"
+			/>
+			<field type="spacer" name="label2"
+				label="NR_THEME"
+				class="acf"
+			/>
+			<field name="style" type="radio"
+				label="ACF_GALLERY_STYLE"
+				description="ACF_GALLERY_STYLE_DESC"
+		        class="btn-group btn-group-yesno"
+				default="grid">
+				<option value="grid">ACF_GALLERY_STYLE_GRID</option>
+				<option value="masonry">ACF_GALLERY_STYLE_MASONRY</option>
+			</field>
+			<field name="devices_columns" type="NRResponsiveControl"
+				title="NR_RESPONSIVE_CONTROL_TITLE"
+				label="ACF_GALLERY_COLUMNS"
+				description="ACF_GALLERY_COLUMNS_DESC">
+                <subform>
+                    <field name="columns" type="number"
+						class="input-small"
+						default="3"
+						hint="3"
+						min="1"
+						max="6" />
+                </subform>
+			</field>
+			<field name="devices_gap" type="NRResponsiveControl"
+				title="NR_RESPONSIVE_CONTROL_TITLE"
+				label="ACF_GALLERY_GAP"
+				description="ACF_GALLERY_GAP_DESC">
+                <subform>
+                    <field name="gap" type="nrnumber"
+						class="input-small"
+						default="10"
+						hint="10"
+						addon="px" />
+                </subform>
+			</field>
+			<field name="ordering" type="list"
+		        label="ACF_GALLERY_ORDERING"
+				description="ACF_GALLERY_ORDERING_DESC"
+		        default="default">
+		            <option value="default">ACF_GALLERY_DEFAULT</option>
+		            <option value="alphabetical">ACF_GALLERY_ALPHABETICAL</option>
+		            <option value="reverse_alphabetical">ACF_GALLERY_REVERSE_ALPHABETICAL</option>
+		            <option value="random">ACF_GALLERY_RANDOM</option>
+		    </field>
+			<field type="spacer" name="label3"
+				label="ACF_GALLERY_LIGHTBOX"
+				class="acf"
+			/>
+			<field name="lightbox" type="NRToggle"
+				label="JENABLED"
+				description="ACF_GALLERY_LIGHTBOX_DESC"
+				checked="true"
+			/>
+			<field name="module" type="NRModules"
+				label="ACF_GALLERY_MODULE"
+				description="ACF_GALLERY_MODULE_DESC"
+				showon="lightbox:1"
+				default="">
+			</field>
+			<field type="spacer" name="label4"
+				label="ACF_GALLERY_ORIGINAL_IMAGE"
+				class="acf"
+			/>
+			<field name="original_image_resize" type="NRToggle"
+		        label="JENABLED"
+				description="ACF_GALLERY_ORIGINAL_IMAGE_RESIZE_DESC"
+		        class="btn-group btn-group-yesno"
+		        default="0"
+			/>
+			<field name="original_image_resize_width" type="nrnumber"
+				label="ACF_GALLERY_ORIGINAL_IMAGE_WIDTH"
+				description="ACF_GALLERY_ORIGINAL_IMAGE_WIDTH_DESC"
+				addon="px"
+				hint="1920"
+				default="1920"
+				class="input-small"
+				showon="original_image_resize:1"
+			/>
+			<field name="original_image_resize_quality" type="nrnumber"
+				label="ACF_GALLERY_ORIGINAL_IMAGE_RESIZE_QUALITY"
+				description="ACF_GALLERY_ORIGINAL_IMAGE_RESIZE_QUALITY_DESC"
+				default="80"
+				hint="80"
+				addon="%"
+				class="input-small"
+				showon="original_image_resize:1"
+			/>
+			<field type="spacer" name="label5"
+				label="ACF_GALLERY_THUMBNAILS"
+				class="acf"
+			/>
+			<field name="resize_method" type="radio"
+		        label="ACF_GALLERY_RESIZE_METHOD"
+				description="ACF_GALLERY_RESIZE_METHOD_DESC"
+		        class="btn-group btn-group-yesno"
+				showon="style:grid"
+		        default="crop">
+		            <option value="crop">ACF_GALLERY_CROP</option>
+		            <option value="stretch">ACF_GALLERY_STRETCH</option>
+		            <option value="fit">ACF_GALLERY_FIT</option>
+		    </field>
+			<field name="thumb_width" type="nrnumber"
+				label="NR_WIDTH"
+				description="ACF_GALLERY_THUMB_WIDTH_DESC"
+				addon="px"
+				min="1"
+				hint="300"
+				default="300"
+				class="input-small"
+			/>
+			<field name="thumb_height" type="nrnumber"
+				label="NR_HEIGHT"
+				description="ACF_GALLERY_THUMB_HEIGHT_DESC"
+				addon="px"
+				min="1"
+				hint="300"
+				default=""
+				class="input-small"
+				showon="style:grid"
+			/>
+			<field name="resize_quality" type="nrnumber"
+				label="ACF_GALLERY_THUMB_QUALITY"
+				description="ACF_GALLERY_THUMB_QUALITY_DESC"
+				min="1"
+				max="100"
+				default="80"
+				hint="80"
+				addon="%"
+				class="input-small"
+			/>
+		</fieldset>
+	</fields>
+</form>
+

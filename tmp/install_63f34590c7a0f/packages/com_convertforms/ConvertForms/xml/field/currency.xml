@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fieldset name="basic">
+        <field name="display" type="list" 
+            label="Display Type"
+            default="1">
+            	<option value="1">Currency Name</option>
+            	<option value="2">Currency Code</option>
+            	<option value="3">Both</option>
+        </field>
+    </fieldset>
+</form>

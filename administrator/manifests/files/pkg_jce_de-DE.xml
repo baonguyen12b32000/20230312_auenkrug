@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="file" version="2.5" method="upgrade">
+	<name>JCE - German (Deutsch)</name>
+	<version>2.9.210915</version>
+	<creationDate>2021-09-15</creationDate>
+	<author>Hartmut Steuerwald</author>
+	<authorEmail>info@h-steuerwald.de</authorEmail>
+	<authorUrl>https://crowdin.com/project/jceeditor</authorUrl>
+	<copyright>© Copyright (C) 2006 - 2019 Widget Factory Limited. Alle Rechte vorbehalten</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<url>https://crowdin.com/project/jceeditor</url>
+	<description>Deutsches (Deutschland) Sprachpaket für JCE 2.x</description>
+	<fileset>
+		<files folder="administrator/language/de-DE" target="administrator/language/de-DE">
+			<file>de-DE.plg_system_jce.sys.ini</file>
+			<file>de-DE.plg_system_jce.ini</file>
+			<file>de-DE.plg_quickicon_jce.sys.ini</file>
+			<file>de-DE.plg_quickicon_jce.ini</file>
+			<file>de-DE.plg_installer_jce.sys.ini</file>
+			<file>de-DE.plg_installer_jce.ini</file>
+			<file>de-DE.plg_extension_jce.sys.ini</file>
+			<file>de-DE.plg_extension_jce.ini</file>
+			<file>de-DE.plg_content_jce.sys.ini</file>
+			<file>de-DE.plg_content_jce.ini</file>
+			<file>de-DE.pkg_jce.sys.ini</file>
+			<file>de-DE.pkg_jce_pro.sys.ini</file>
+			<file>de-DE.com_jce.sys.ini</file>
+			<file>de-DE.com_jce.menu.ini</file>
+			<file>de-DE.com_jce.ini</file>
+			<file>de-DE.com_jce_pro.sys.ini</file>
+			<file>de-DE.plg_editors_jce.ini</file>
+			<file>de-DE.plg_editors_jce.sys.ini</file>
+			<file>de-DE.plg_fields_mediajce.ini</file>
+			<file>de-DE.plg_fields_mediajce.sys.ini</file>
+			<file>de-DE.plg_system_jcemediabox.ini</file>
+			<file>de-DE.plg_system_jcemediabox.sys.ini</file>
+		</files>
+		<files folder="language/de-DE" target="language/de-DE">
+			<file>de-DE.com_jce.ini</file>
+			<file>de-DE.com_jce_pro.ini</file>
+		</files>
+  	</fileset>
+  	<updateservers>
+        <server type="extension" priority="1" name="JCE Language Pack">
+            <![CDATA[https://cdn.joomlacontenteditor.net/updates/xml/languages/editor/pkg_jce_de-DE.xml]]>
+        </server>
+    </updateservers>
+</extension>

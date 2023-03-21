@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="template" client="site" method="upgrade">
+	<name>wwu-template</name>
+	<version>1.0.0</version>
+	<creationDate>Juni 2022</creationDate>
+<author>WWU Medien GmbH</author>
+	<authorEmail>info@wwu.media</authorEmail>
+	<copyright>(C) 2022 WWU Medien GmbH</copyright>
+	<description>	<![CDATA[
+		<p>WWU Template for Joomla 4</p>
+	]]></description>
+	<inheritable>1</inheritable>
+	<files>
+		<filename>index.php</filename>
+		<filename>joomla.asset.json</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>html</folder>
+		<folder>language</folder>
+	</files>
+	<media destination="templates/site/wwu-template" folder="media">
+		<folder>js</folder>
+		<folder>fonts</folder>
+		<folder>css</folder>
+		<folder>scss</folder>
+		<folder>images</folder>
+	</media>
+	<positions>
+		<position>logo</position>
+		<position>navi</position>
+		<position>slide-image</position>
+		<position>left</position>
+		<position>content-top</position>
+		<position>content-bottom</position>
+		<position>footer</position>
+		<position>fix</position>
+	</positions>
+</extension>

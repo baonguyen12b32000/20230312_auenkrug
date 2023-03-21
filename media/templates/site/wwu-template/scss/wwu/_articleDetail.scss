@@ -1,0 +1,14 @@
+.shadowBox {
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.com-content-article__body {
+  padding: 0 25px 25px 25px;
+}
+.page-header {
+  padding: 0 25px;
+
+  dd.published {
+    padding-top: 25px; // Veröffentlichungsdatum Abstand oben zur Shadowbox
+}
+}

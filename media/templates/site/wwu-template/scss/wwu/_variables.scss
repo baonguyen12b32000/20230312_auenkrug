@@ -1,0 +1,58 @@
+/*Fonts Quicksand*/
+/*@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap');*/
+/* raleway-regular - latin */
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/Quicksand-Light.ttf');
+}
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Quicksand-Regular.ttf');
+}
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/Quicksand-SemiBold.ttf');
+}
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/Quicksand-Bold.ttf');
+}
+//colors
+$primaryColor: #000; //Black
+$secondaryColor: #88001A; //Red
+$hoverColor: #FFD710; // Yellow
+$grey: #CECDCD; //Grey
+$transpGrey:rgba(246, 246, 246, 0.8);//TransparentGrey
+$textGrey: #707070;
+$transpWhite: rgba(255, 255, 255, 0.95);
+$white: #fff;
+$black: #000;
+
+
+// size
+$maxWidth: 1200px;
+
+// animation
+$aniTime1: .3s;
+$aniTime2: .7s;
+$aniTime3: .8s;
+$aniTime4: 1s;
+$aniTime5: 1.5s;
+
+// breakpoints
+$screen-xs: 575px;
+$screen-sm: 767px;
+$screen-md: 970px;
+$mobile-nav: 991px;
+$xs: 575px;
+$sm: 767px;
+$md: 991px;
+$lg: 1199px;

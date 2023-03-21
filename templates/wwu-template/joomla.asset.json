@@ -1,0 +1,65 @@
+{
+  "$schema": "https://developer.joomla.org/schemas/json-schema/web_assets.json",
+  "name": "wwu-template",
+  "version": "1.0.0",
+  "description": "Modified version of the default cassiopeia template.",
+  "license": "GPL-2.0-or-later",
+  "assets": [
+
+    {
+      "name": "template.wwu-template.mainstyles",
+      "description": "The default css style to use.",
+      "type": "style",
+      "uri": "template.min.css",
+      "dependencies": [
+        "fontawesome"
+      ]
+    },
+    {
+      "name": "template.wwu-template.scripts",
+      "description": "javascript file for this template.",
+      "type": "script",
+      "uri": "template.js",
+      "attributes" : {
+        "defer": true
+      },
+      "dependencies": [
+        "core"
+      ]
+    },
+    {
+      "name": "fontawesome.wwu-template.scripts",
+      "description": "fontawesome js for this template.",
+      "type": "script",
+      "uri": "fontawesome.min.js",
+      "attributes" : {
+        "defer": true
+      },
+      "dependencies": [
+        "core"
+      ]
+    },
+    {
+      "name": "fa-style.wwu-template.scripts",
+      "description": "fontawesome REGULAR js for this template.",
+      "type": "script",
+      "uri": "regular.min.js",
+      "attributes" : {
+        "defer": true
+      },
+      "dependencies": [
+        "core"
+      ]
+    },
+    {
+      "name": "searchtools",
+      "type": "style",
+      "uri": "system/searchtools/searchtools.min.css"
+    },
+    {
+      "name": "fontawesome",
+      "type": "style",
+      "uri": "system/joomla-fontawesome.min.css"
+    }
+  ]
+}
